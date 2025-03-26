@@ -127,13 +127,13 @@ function showAllGames() {
 
 // select each button in the "Our Games" section
 const unfundedBtn = document.getElementById("unfunded-btn");
-unfundedBtn.addEventListener("click", filterUnfundedOnly());
 const fundedBtn = document.getElementById("funded-btn");
-fundedBtn.addEventListener("click", filterFundedOnly());
 const allBtn = document.getElementById("all-btn");
-allBtn.addEventListener("click", showAllGames());
-// add event listeners with the correct functions to each button
 
+// add event listeners with the correct functions to each button
+unfundedBtn.addEventListener("click", filterUnfundedOnly);
+fundedBtn.addEventListener("click", filterFundedOnly);
+allBtn.addEventListener("click", showAllGames);
 /*************************************************************************************
  * Challenge 6: Add more information at the top of the page about the company.
  * Skills used: template literals, ternary operator

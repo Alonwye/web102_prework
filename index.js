@@ -5,6 +5,7 @@
  */
 
 // import the JSON data about the crowd funded games from the games.js file
+import games from "./games.js";
 import GAMES_DATA from "./games.js";
 
 // create a list of objects to store the data about the games using JSON.parse
@@ -26,27 +27,25 @@ function deleteChildElements(parent) {
 const gamesContainer = document.getElementById("games-container");
 
 // create a function that adds all data from the games array to the page
-function addGamesToPage(games) {
+function addGamesToPage(game) {
   // loop over each item in the data
-  for (let i = 0; i < games.length; i++) {
+  for (let i = 0; i < game.length; i++) {
+    // create a new div element, which will become the game card
     const newDiv = document.createElement("div");
+    // add the class game-card to the list
     newDiv.classList.add("game-card");
-    newDiv.innerHTML =
-      "<li>Name: ${games.Name}</li><li>Pledged: ${games.pledged}</li><li>Backers: ${games.backers}</li><li>${games.img}</li>";
+    // set the inner HTML using a template literal to display some info
+    // about each game
+    // TIP: if your images are not displaying, make sure there is space
+    // between the end of the src attribute and the end of the tag ("/>")
+
+    const markUp = `<div><p>${game[i].name}</p><li>Pledged: ${game[i].pledged}</li><li>Backers: ${game[i].backers}</li><p><img src="${game[i].img}" width=100% height=50%/></p></div>`;
+    newDiv.innerHTML = markUp;
+    // append the game to the games-container
+    gamesContainer.appendChild(newDiv);
   }
-
-  // create a new div element, which will become the game card
-
-  // add the class game-card to the list
-
-  // set the inner HTML using a template literal to display some info
-  // about each game
-  // TIP: if your images are not displaying, make sure there is space
-  // between the end of the src attribute and the end of the tag ("/>")
-
-  // append the game to the games-container
 }
-
+addGamesToPage(GAMES_JSON);
 // call the function we just defined using the correct variable
 // later, we'll call this function using a different list of games
 

@@ -39,7 +39,7 @@ function addGamesToPage(game) {
     // TIP: if your images are not displaying, make sure there is space
     // between the end of the src attribute and the end of the tag ("/>")
 
-    const markUp = `<div><p>${game[i].name}</p><li>Pledged: ${game[i].pledged}</li><li>Backers: ${game[i].backers}</li><p><img src="${game[i].img}" width=100% height=50%/></p></div>`;
+    const markUp = `<div><h2>${game[i].name}</h2><li>Pledged: ${game[i].backers}</li><p>Backers: ${game[i].description}</p><p><img src="${game[i].img}" width=100% height=50%/></p></div>`;
     newDiv.innerHTML = markUp;
     // append the game to the games-container
     gamesContainer.appendChild(newDiv);

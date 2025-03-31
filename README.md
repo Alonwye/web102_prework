@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<a href="https://drive.google.com/file/d/1Q-PGboBA0RKHBhbVOBYwk0hu28XMNSUs/view?usp=sharing" title='Video Walkthrough' width='' alt='Video Walkthrough'>Video Walkthrough</a>
+<img src='https://github.com/Alonwye/web102_prework/blob/main/assets/SeaMonster.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with ... Kap (https://getkap.co/) for macOS
 

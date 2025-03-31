@@ -18,29 +18,23 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 - [x] Added link to 'Our Games' section
+- [x] Changed size of font for #num-contributions, #total-raised, and #num-games to be 36 instead of 50, because it was simply too large.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://drive.google.com/file/d/1Q-PGboBA0RKHBhbVOBYwk0hu28XMNSUs/view?usp=sharing' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-
-GIF created with ...
-
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with ... Kap (https://getkap.co/) for macOS
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Some of the javascript I had not encountered previously, but it wasn't too bad to look it up. The biggest issue I had was remembering syntax, as it has been awhile since I touched code.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2025 Amanda Baxter
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
